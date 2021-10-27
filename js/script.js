@@ -7,6 +7,8 @@ let config = [
 	{name: "own", link: 'https://vinsdev.xyz'}
 ]
 
+let googleSearch = 'https://www.google.com/search?q=';
+
 let quotes = [
 	"Any fool can write code that a computer can understand.",
 	"First, solve the problem.",
@@ -31,3 +33,14 @@ function winOpen(name) {
 
 	location.href = find.link
 }
+
+let form = document.getElementById('form');
+
+form.addEventListener("submit", (e) => {
+	e.preventDefault();
+	let input = document.getElementById('input');
+	let search = input.value.split(/ +/g).join("+")
+
+	location.href = googleSearch + search
+	return;
+})
