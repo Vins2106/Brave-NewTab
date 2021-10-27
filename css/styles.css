@@ -109,6 +109,31 @@ body {
 	color: black;
 }
 
+.clock {
+	border-right: 2px solid rgb(0,0,0,0.3);
+	padding-right: 20px;
+	margin-right: 15px;
+}
+
+.time {
+	color: black;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.cr {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+}
+
+.cr-text, .cr-text a {
+	color: black;
+	font-weight: bold;
+}
+
+
+
 
 
 
